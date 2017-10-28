@@ -26,9 +26,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         currentValue = lroundf(slider.value)
-        startNewRound()
+       startOverButtonTapped()
 
     }
+    
+    @IBAction func startOverButtonTapped() {
+        score = 0
+        round = 0
+        startNewRound()
+    }
+    
+
     
     func updateLabels() {
         
@@ -88,11 +96,11 @@ class ViewController: UIViewController {
             
         } else if difference < 10 {
             
-            title = "way off!"
+            title = "you can do better"
     
         } else  {
             
-            title = "WTF are you looking at. You need glasses"
+            title = "Way off!"
         }
         
          score += points
@@ -101,13 +109,16 @@ class ViewController: UIViewController {
         
        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {
+            
+            action in
+            self.startNewRound()
+        })
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
     }
     
 }
