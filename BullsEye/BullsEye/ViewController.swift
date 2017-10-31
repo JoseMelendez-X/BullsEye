@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     var score = 0
     var round = 0
     
-
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetValueLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -26,8 +25,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         currentValue = lroundf(slider.value)
-       startOverButtonTapped()
+        startOverButtonTapped()
 
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
+        
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")
+        
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")
+        
+        let trackLeftResizable = trackLeftImage?.resizableImage(withCapInsets: insets)
+        
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = UIImage(named: "SliderTrackRight")
+        
+        let trackRightResizable = trackRightImage?.resizableImage(withCapInsets: insets)
+        
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
     
     @IBAction func startOverButtonTapped() {
@@ -59,7 +79,6 @@ class ViewController: UIViewController {
         round += 1
         
         updateLabels()
-        
     }
     
     
@@ -67,7 +86,7 @@ class ViewController: UIViewController {
         
         print("The value of the slider is now: \(slider.value)")
         
-        currentValue = lroundf(slider.value)
+       currentValue = lroundf(slider.value)
     }
 
 
@@ -76,7 +95,6 @@ class ViewController: UIViewController {
         let difference: Int = abs(currentValue - targetValue)
         
         var points = 100 - difference
-        
         
         let title: String
         
@@ -118,8 +136,6 @@ class ViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        
     }
     
 }
-

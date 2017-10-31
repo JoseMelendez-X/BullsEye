@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592691951FA51BBB0035A06C /* AboutTheAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592691941FA51BBA0035A06C /* AboutTheAuthorViewController.swift */; };
 		5936B5E61FA435950040B797 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936B5E51FA435950040B797 /* AboutMeViewController.swift */; };
 		599605DC1FA3BE3A005B4BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599605DB1FA3BE3A005B4BD5 /* AppDelegate.swift */; };
 		599605DE1FA3BE3A005B4BD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599605DD1FA3BE3A005B4BD5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592691941FA51BBA0035A06C /* AboutTheAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTheAuthorViewController.swift; sourceTree = "<group>"; };
 		5936B5E51FA435950040B797 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		599605D81FA3BE3A005B4BD5 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599605DB1FA3BE3A005B4BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				599605DB1FA3BE3A005B4BD5 /* AppDelegate.swift */,
 				599605DD1FA3BE3A005B4BD5 /* ViewController.swift */,
 				599605DF1FA3BE3A005B4BD5 /* Main.storyboard */,
+				592691941FA51BBA0035A06C /* AboutTheAuthorViewController.swift */,
 				5936B5E51FA435950040B797 /* AboutMeViewController.swift */,
 				599605E21FA3BE3A005B4BD5 /* Assets.xcassets */,
 				599605E41FA3BE3A005B4BD5 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				599605DE1FA3BE3A005B4BD5 /* ViewController.swift in Sources */,
 				5936B5E61FA435950040B797 /* AboutMeViewController.swift in Sources */,
 				599605DC1FA3BE3A005B4BD5 /* AppDelegate.swift in Sources */,
+				592691951FA51BBB0035A06C /* AboutTheAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

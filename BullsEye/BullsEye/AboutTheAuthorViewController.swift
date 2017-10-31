@@ -1,14 +1,14 @@
 //
-//  AboutMeViewController.swift
+//  AboutTheAuthorViewController.swift
 //  BullsEye
 //
-//  Created by Jose Melendez on 10/27/17.
+//  Created by Jose Melendez on 10/28/17.
 //  Copyright © 2017 JoseMelendez. All rights reserved.
 //
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
+class AboutTheAuthorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,9 @@ class AboutMeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func close() {
+    @IBAction func dismissVC() {
         
-     dismiss(animated: true, completion: nil)
-    
+        dismiss(animated: true, completion: nil)
+        
     }
-
 }
